@@ -21,7 +21,8 @@ const forecast = (lat, lon, callback) =>{
                 feelsLike: current.feels_like,
                 description: description,
                 pop: hourly.pop,
-                forecast:('Temperature of '+current.temp+', feels like '+current.feels_like+', '+description+'. There is a '+(hourly.pop*100)+'% chance of precipitation. The daily high is '+high+', and the low is '+low)
+                forecast:('Temperature of '+current.temp+', feels like '+current.feels_like+', '
+                +description+'. There is a '+(hourly.pop*100)+'% chance of precipitation. The daily high is '+high+', and the low is '+low)
             }
             callback(undefined, data)
         } 
